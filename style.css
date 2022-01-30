@@ -1,0 +1,167 @@
+#page-container {
+  text-align: center;
+  margin: 50px auto;
+  min-width: 250px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  border: 5px solid violet;
+  width: 400px;
+}
+
+#game-container {
+  background-color: papayawhip;
+  border: 10px solid violet;
+  display: inline-block;
+  padding: 0 10px 10px 10px;
+}
+
+body {
+  background-image: url("images/rainbow.jpeg");
+  background-size: cover;
+}
+
+.boxes {
+  text-align: center;
+}
+
+#grid-container button {
+  aspect-ratio: 1;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  background-color: midnightblue;
+}
+
+#grid-container button:disabled {
+  background-color: black;
+}
+
+.message-div {
+  margin-top: 50px;
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#grid-container button:hover:enabled {
+  background-color: #3fd1e1; /* Green */
+}
+
+#play-with-friend-btn,
+#play-with-computer-btn {
+  padding: 10px;
+  background-color: turquoise;
+  border: 5px solid violet;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+#play-with-computer-btn:hover {
+  background-color: yellowgreen;
+}
+#play-with-friend-btn:hover {
+  background-color: yellowgreen;
+}
+
+.player-one,
+.player-two {
+  font-size: 20px;
+}
+
+header {
+  margin-bottom: 25px;
+}
+header h1 {
+  font-size: 50px;
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+}
+
+.image-container {
+  width: 50%;
+  border: 2px solid red;
+}
+/* .image-container img {
+  width: 20px;
+  height: 20px;
+} */
+.headline {
+  display: inline;
+}
+
+.image-one {
+  width: 50px;
+}
+.image-two {
+  width: 50px;
+}
+.result-player-one,
+.result-player-two {
+  border: 1px dotted blue;
+  font-size: 20px;
+
+  padding: 3px;
+  font-weight: bold;
+}
+.player-one,
+.player-two {
+  font-weight: 5 00;
+  color: rgb(231, 44, 231);
+  font-family: "Quicksand", sans-serif;
+}
+header h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.image-kitty {
+  background-image: url("images/hello_kitty.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.image-numnom {
+  background-image: url("images/numnom2.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.player-one img {
+  width: 25px;
+  height: 25px;
+}
+.player-two img {
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 500px) {
+  #game-container {
+    width: 90%;
+    border: none;
+  }
+
+  #grid-container {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+  .player-one,
+  .player-two {
+    font-size: 12px;
+  }
+  .message-div {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
